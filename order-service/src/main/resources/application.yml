@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate.ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/order_mgmt"
+    username: postgres
+    password: postgres
+  application:
+    name: opm
+
+logging:
+  file.name: log/dev_opm.log
+  level:
+    com.eop.order: DEBUG
+

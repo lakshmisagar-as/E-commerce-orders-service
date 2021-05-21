@@ -1,0 +1,194 @@
+2021-05-19 03:32:22.853  WARN [opm,,] 4692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h27m36s731ms897µs800ns).
+2021-05-19 05:28:38.505  INFO [opm,,] 4692 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-19 05:28:38.505  INFO [opm,,] 4692 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 05:28:38.520  INFO [opm,,] 4692 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-19 05:28:38.540  INFO [opm,,] 4692 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-19 05:28:39.860  INFO [opm,,] 4692 --- [restartedMain] com.eop.order.OrderProcessingService     : Starting OrderProcessingService using Java 16.0.1 on DESKTOP-7VMGKHE with PID 4692 (C:\Users\user\Documents\egen\eop\order-service\target\classes started by user in C:\Users\user\Documents\egen\eop)
+2021-05-19 05:28:39.863 DEBUG [opm,,] 4692 --- [restartedMain] com.eop.order.OrderProcessingService     : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-19 05:28:39.863  INFO [opm,,] 4692 --- [restartedMain] com.eop.order.OrderProcessingService     : No active profile set, falling back to default profiles: default
+2021-05-19 05:28:41.659  INFO [opm,,] 4692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-19 05:28:41.699  INFO [opm,,] 4692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2021-05-19 05:28:41.909  INFO [opm,,] 4692 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8579a120-00b6-3c67-8bea-ff562daa7acb
+2021-05-19 05:28:42.491  INFO [opm,,] 4692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-19 05:28:42.496  INFO [opm,,] 4692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-19 05:28:42.516  INFO [opm,,] 4692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-19 05:28:42.651  INFO [opm,,] 4692 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-05-19 05:28:42.651  INFO [opm,,] 4692 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2774 ms
+2021-05-19 05:28:44.634  INFO [opm,,] 4692 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-19 05:28:44.735  INFO [opm,,] 4692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-05-19 05:28:44.892  INFO [opm,,] 4692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-05-19 05:28:44.892  INFO [opm,,] 4692 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-19 05:28:46.513  WARN [opm,,] 4692 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.eop.order.core.entities.BaseEntity.
+2021-05-19 05:28:46.863  INFO [opm,,] 4692 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-19 05:28:46.863  INFO [opm,,] 4692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 05:28:46.938  INFO [opm,,] 4692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-19 05:28:47.610  WARN [opm,,] 4692 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderResource' defined in file [C:\Users\user\Documents\egen\eop\order-service\target\classes\com\eop\order\resources\OrderResource.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderService' defined in file [C:\Users\user\Documents\egen\eop\core\target\classes\com\eop\order\core\services\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eop.order.core.helper.HelperFunctions' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-19 05:28:47.615  INFO [opm,,] 4692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 05:28:47.615  INFO [opm,,] 4692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-05-19 05:28:47.635  INFO [opm,,] 4692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-05-19 05:28:47.635  INFO [opm,,] 4692 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-05-19 05:28:47.678  INFO [opm,,] 4692 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-19 05:28:47.740 ERROR [opm,,] 4692 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.eop.order.core.services.OrderService required a bean of type 'com.eop.order.core.helper.HelperFunctions' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eop.order.core.helper.HelperFunctions' in your configuration.
+
+2021-05-19 05:28:50.045  INFO [opm,,] 4692 --- [restartedMain] com.eop.order.OrderProcessingService     : Starting OrderProcessingService using Java 16.0.1 on DESKTOP-7VMGKHE with PID 4692 (C:\Users\user\Documents\egen\eop\order-service\target\classes started by user in C:\Users\user\Documents\egen\eop)
+2021-05-19 05:28:50.050 DEBUG [opm,,] 4692 --- [restartedMain] com.eop.order.OrderProcessingService     : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-19 05:28:50.050  INFO [opm,,] 4692 --- [restartedMain] com.eop.order.OrderProcessingService     : No active profile set, falling back to default profiles: default
+2021-05-19 05:28:51.029  INFO [opm,,] 4692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-19 05:28:51.065  INFO [opm,,] 4692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2021-05-19 05:28:51.318  INFO [opm,,] 4692 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8579a120-00b6-3c67-8bea-ff562daa7acb
+2021-05-19 05:28:51.661  INFO [opm,,] 4692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-19 05:28:51.663  INFO [opm,,] 4692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-19 05:28:51.663  INFO [opm,,] 4692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-19 05:28:51.720  INFO [opm,,] 4692 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2021-05-19 05:28:51.720  INFO [opm,,] 4692 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1665 ms
+2021-05-19 05:28:52.645  INFO [opm,,] 4692 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-19 05:28:52.655  INFO [opm,,] 4692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-05-19 05:28:52.715  INFO [opm,,] 4692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-05-19 05:28:52.715  INFO [opm,,] 4692 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-19 05:28:53.370  WARN [opm,,] 4692 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.eop.order.core.entities.BaseEntity.
+2021-05-19 05:28:53.670  INFO [opm,,] 4692 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-19 05:28:53.670  INFO [opm,,] 4692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 05:28:53.740  INFO [opm,,] 4692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-19 05:28:54.008  WARN [opm,,] 4692 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderResource' defined in file [C:\Users\user\Documents\egen\eop\order-service\target\classes\com\eop\order\resources\OrderResource.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderService' defined in file [C:\Users\user\Documents\egen\eop\core\target\classes\com\eop\order\core\services\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eop.order.core.helper.HelperFunctions' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-19 05:28:54.009  INFO [opm,,] 4692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 05:28:54.009  INFO [opm,,] 4692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-05-19 05:28:54.019  INFO [opm,,] 4692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-05-19 05:28:54.019  INFO [opm,,] 4692 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-05-19 05:28:54.054  INFO [opm,,] 4692 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-19 05:28:54.059 ERROR [opm,,] 4692 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.eop.order.core.services.OrderService required a bean of type 'com.eop.order.core.helper.HelperFunctions' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eop.order.core.helper.HelperFunctions' in your configuration.
+
+2021-05-19 05:33:49.494  INFO [opm,,] 10372 --- [restartedMain] com.eop.order.OrderProcessingService     : Starting OrderProcessingService using Java 16.0.1 on DESKTOP-7VMGKHE with PID 10372 (C:\Users\user\Documents\egen\eop\order-service\target\classes started by user in C:\Users\user\Documents\egen\eop)
+2021-05-19 05:33:49.499 DEBUG [opm,,] 10372 --- [restartedMain] com.eop.order.OrderProcessingService     : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-19 05:33:49.499  INFO [opm,,] 10372 --- [restartedMain] com.eop.order.OrderProcessingService     : No active profile set, falling back to default profiles: default
+2021-05-19 05:33:49.561  INFO [opm,,] 10372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-19 05:33:49.561  INFO [opm,,] 10372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-19 05:33:51.104  INFO [opm,,] 10372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-19 05:33:51.194  INFO [opm,,] 10372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2021-05-19 05:33:51.524  INFO [opm,,] 10372 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8579a120-00b6-3c67-8bea-ff562daa7acb
+2021-05-19 05:33:52.459  INFO [opm,,] 10372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-19 05:33:52.469  INFO [opm,,] 10372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-19 05:33:52.469  INFO [opm,,] 10372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-19 05:33:52.639  INFO [opm,,] 10372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-05-19 05:33:52.644  INFO [opm,,] 10372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3078 ms
+2021-05-19 05:33:53.830  INFO [opm,,] 10372 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-19 05:33:53.885  INFO [opm,,] 10372 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-19 05:33:54.045  INFO [opm,,] 10372 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-19 05:33:54.160  INFO [opm,,] 10372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-19 05:33:54.285  INFO [opm,,] 10372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-19 05:33:54.300  INFO [opm,,] 10372 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-19 05:33:54.870  WARN [opm,,] 10372 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.eop.order.core.entities.BaseEntity.
+2021-05-19 05:33:55.657  INFO [opm,,] 10372 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-19 05:33:55.677  INFO [opm,,] 10372 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 05:33:55.782  INFO [opm,,] 10372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-19 05:33:56.222  WARN [opm,,] 10372 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderResource' defined in file [C:\Users\user\Documents\egen\eop\order-service\target\classes\com\eop\order\resources\OrderResource.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderService' defined in file [C:\Users\user\Documents\egen\eop\core\target\classes\com\eop\order\core\services\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eop.order.core.helper.HelperFunctions' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-19 05:33:56.222  INFO [opm,,] 10372 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 05:33:56.227  INFO [opm,,] 10372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-19 05:33:56.232  INFO [opm,,] 10372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-19 05:33:56.237  INFO [opm,,] 10372 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-05-19 05:33:56.277  INFO [opm,,] 10372 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-19 05:33:56.317 ERROR [opm,,] 10372 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.eop.order.core.services.OrderService required a bean of type 'com.eop.order.core.helper.HelperFunctions' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eop.order.core.helper.HelperFunctions' in your configuration.
+
+2021-05-19 05:36:37.724  INFO [opm,,] 18200 --- [restartedMain] com.eop.order.OrderProcessingService     : Starting OrderProcessingService using Java 16.0.1 on DESKTOP-7VMGKHE with PID 18200 (C:\Users\user\Documents\egen\eop\order-service\target\classes started by user in C:\Users\user\Documents\egen\eop)
+2021-05-19 05:36:37.724 DEBUG [opm,,] 18200 --- [restartedMain] com.eop.order.OrderProcessingService     : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-19 05:36:37.724  INFO [opm,,] 18200 --- [restartedMain] com.eop.order.OrderProcessingService     : No active profile set, falling back to default profiles: default
+2021-05-19 05:36:37.793  INFO [opm,,] 18200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-19 05:36:37.793  INFO [opm,,] 18200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-19 05:36:39.170  INFO [opm,,] 18200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-19 05:36:39.260  INFO [opm,,] 18200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2021-05-19 05:36:39.615  INFO [opm,,] 18200 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2822781b-95e5-3bba-b8c2-f82a9e61e37c
+2021-05-19 05:36:40.630  INFO [opm,,] 18200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-19 05:36:40.645  INFO [opm,,] 18200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-19 05:36:40.645  INFO [opm,,] 18200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-19 05:36:40.805  INFO [opm,,] 18200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-05-19 05:36:40.810  INFO [opm,,] 18200 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3013 ms
+2021-05-19 05:36:41.882  INFO [opm,,] 18200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-19 05:36:41.937  INFO [opm,,] 18200 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-19 05:36:42.122  INFO [opm,,] 18200 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-19 05:36:42.237  INFO [opm,,] 18200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-19 05:36:42.458  INFO [opm,,] 18200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-19 05:36:42.478  INFO [opm,,] 18200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-19 05:36:43.053  WARN [opm,,] 18200 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.eop.order.core.entities.BaseEntity.
+2021-05-19 05:36:43.853  INFO [opm,,] 18200 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-19 05:36:43.878  INFO [opm,,] 18200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 05:36:43.978  INFO [opm,,] 18200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-19 05:36:44.688  WARN [opm,,] 18200 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-19 05:36:44.848  INFO [opm,,] 18200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-19 05:36:46.585  INFO [opm,,] 18200 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-05-19 05:36:46.720  INFO [opm,,] 18200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-05-19 05:36:46.966  INFO [opm,,] 18200 --- [restartedMain] com.eop.order.OrderProcessingService     : Started OrderProcessingService in 10.47 seconds (JVM running for 11.931)
+2021-05-19 05:36:47.120  INFO [opm,,] 18200 --- [RMI TCP Connection(2)-10.0.75.1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-19 05:36:47.120  INFO [opm,,] 18200 --- [RMI TCP Connection(2)-10.0.75.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-19 05:36:47.125  INFO [opm,,] 18200 --- [RMI TCP Connection(2)-10.0.75.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-05-19 06:51:14.161  INFO [opm,,] 1632 --- [restartedMain] com.eop.order.OrderProcessingService     : Starting OrderProcessingService using Java 16.0.1 on DESKTOP-7VMGKHE with PID 1632 (C:\Users\user\Documents\egen\eop\order-service\target\classes started by user in C:\Users\user\Documents\egen\eop)
+2021-05-19 06:51:14.164 DEBUG [opm,,] 1632 --- [restartedMain] com.eop.order.OrderProcessingService     : Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-05-19 06:51:14.164  INFO [opm,,] 1632 --- [restartedMain] com.eop.order.OrderProcessingService     : No active profile set, falling back to default profiles: default
+2021-05-19 06:51:14.224  INFO [opm,,] 1632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-19 06:51:14.224  INFO [opm,,] 1632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-19 06:51:15.571  INFO [opm,,] 1632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-19 06:51:15.646  INFO [opm,,] 1632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2021-05-19 06:51:15.971  INFO [opm,,] 1632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2822781b-95e5-3bba-b8c2-f82a9e61e37c
+2021-05-19 06:51:16.872  INFO [opm,,] 1632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-19 06:51:16.882  INFO [opm,,] 1632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-19 06:51:16.882  INFO [opm,,] 1632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-19 06:51:17.022  INFO [opm,,] 1632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-05-19 06:51:17.022  INFO [opm,,] 1632 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2798 ms
+2021-05-19 06:51:18.047  INFO [opm,,] 1632 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-19 06:51:18.102  INFO [opm,,] 1632 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-19 06:51:18.237  INFO [opm,,] 1632 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-19 06:51:18.423  INFO [opm,,] 1632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-19 06:51:18.593  INFO [opm,,] 1632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-19 06:51:18.623  INFO [opm,,] 1632 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-19 06:51:19.187  WARN [opm,,] 1632 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.eop.order.core.entities.BaseEntity.
+2021-05-19 06:51:19.902  INFO [opm,,] 1632 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-19 06:51:19.912  INFO [opm,,] 1632 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-19 06:51:19.997  WARN [opm,,] 1632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-19 06:51:20.747  WARN [opm,,] 1632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-19 06:51:20.882  INFO [opm,,] 1632 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-19 06:51:22.476  INFO [opm,,] 1632 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-05-19 06:51:22.606  INFO [opm,,] 1632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-05-19 06:51:22.846  INFO [opm,,] 1632 --- [restartedMain] com.eop.order.OrderProcessingService     : Started OrderProcessingService in 9.921 seconds (JVM running for 11.799)

@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://${DB_HOST}/${DB_NAME}"
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+logging:
+  file.name: log/prod_opm.log
+  level:
+    com.eop.order: WARN

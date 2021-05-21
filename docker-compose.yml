@@ -1,0 +1,57 @@
+version: '3'
+
+services:
+  order-service:
+    image: eop/order-service
+    ports:
+      - 8080:8080
+    environment:
+      - DB_HOST=order-postgres
+      - DB_USERNAME=order_admin
+      - DB_PASSWORD=order_admin
+      - DB_NAME=order_mgmt
+      - spring.profiles.active=prod
+    depends_on:
+      - order-postgres
+    networks:
+      - order_mgmt
+    deploy:
+      mode: replicated
+      replicas: 1
+
+  order-bulk-service:
+    image: eop/order-bulk-service
+    ports:
+      - 8081:8081
+    environment:
+      - DB_HOST=order-postgres
+      - DB_USERNAME=order_admin
+      - DB_PASSWORD=order_admin
+      - DB_NAME=order_mgmt
+      - spring.profiles.active=prod
+    depends_on:
+      - order-postgres
+    networks:
+      - order_mgmt
+    deploy:
+      mode: replicated
+      replicas: 1
+
+  order-postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=order_admin
+      - POSTGRES_USER=order_admin
+      - POSTGRES_DB=order_mgmt
+    volumes:
+      - postgres-data0:/var/lib/postgresql/data
+    networks:
+      - order_mgmt
+
+volumes:
+  postgres-data0:
+    driver: local
+
+networks:
+  order_mgmt:
+    external: true
